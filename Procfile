@@ -1,1 +1,1 @@
-web: yarn build && yarn generate && nuxt start
+web: yarn install && yarn build && yarn generate && nuxt start
