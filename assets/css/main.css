@@ -1,0 +1,101 @@
+@import url("./fontawesome-webfont/font-awesome.min.css");
+@font-face {
+  font-family: "Sniglet";
+  src: local("Sniglet"), url(~assets/css/Sniglet/Sniglet-Regular.ttf) format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: Sniglet, sans-serif !important;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+button:focus, input[type="button"]:focus
+button:active, input[type="button"]:active {
+  @apply outline-none;
+}
+
+.button {
+  @apply px-4 py-3 text-center rounded-lg uppercase font-semibold mx-2;
+}
+
+.button:hover {
+  @apply shadow;
+  @apply transform -translate-y-1;
+} 
+
+.button:last-of-type {
+  @apply mr-0;
+} 
+
+.button:first-of-type {
+  @apply ml-0;
+} 
+
+.button.button-md {
+  @apply text-sm py-2 px-3;
+}
+
+.button.button-lg {
+  @apply text-sm py-4 px-4;
+}
+
+.button.button-sm {
+  @apply text-sm py-1 px-2;
+}
+
+.button.button-outline {
+  @apply border;
+}
+
+.button.button-primary {
+  @apply bg-blue-900 text-white;
+}
+
+.button.button-error {
+  @apply bg-red-600 text-white;
+}
+
+.button.button-success {
+  @apply bg-green-600 text-white;
+}
+
+.button.button-outline-primary {
+  @apply bg-transparent border-gray-400 border text-blue-900;
+}
+
+.button.button-outline-error {
+  @apply bg-white border-gray-400 border text-red-600;
+}
+
+.button.button-link {
+  @apply text-blue-900 font-bold px-0;
+}
+
+.button.button-full {
+  @apply rounded-full;
+}
