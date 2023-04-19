@@ -5,6 +5,7 @@ FROM node:14.17-alpine AS build
 RUN apk update && \
     apk add --no-cache curl git
 WORKDIR /app
+ENV SERVER_URL=0.0.0.0
 COPY package.json package.json
 COPY yarn.lock yarn.lock
 RUN yarn install
