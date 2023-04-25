@@ -1,0 +1,1 @@
+docker push pius24/quickservice:quickservice

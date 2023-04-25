@@ -1,0 +1,6 @@
+/* 
+1. Create a devcontainer.json, which describes how VS Code should start the container and what to do after it connects.
+2. Make and persist changes to the dev container, such as installation of new software, through use of a Dockerfile.
+3. Configure multiple containers through Docker Compose.
+4. As you make changes, build your dev container to ensure changes take effect. 
+*/

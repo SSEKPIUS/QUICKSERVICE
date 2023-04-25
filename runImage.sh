@@ -1,0 +1,1 @@
+docker run -p 3000:80 pius24/quickservice:quickservice

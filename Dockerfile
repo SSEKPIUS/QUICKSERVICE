@@ -1,7 +1,7 @@
 # Build stage
 # - We start with the node:14-alpine base image for the build stage.
 # -node:alpine uses the Alpine Linux distribution, which uses a different package manager called apk.
-FROM node:14.17-alpine AS build 
+FROM node:14.20-alpine AS build 
 RUN apk update && \
     apk add --no-cache curl git
 WORKDIR /app
